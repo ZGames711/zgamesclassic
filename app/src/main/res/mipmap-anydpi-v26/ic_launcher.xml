@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon from the user's official PSX logo (gamepad + neon
+     Z + wordmark). Foreground artwork is scaled to the safe zone so
+     circle/squircle masks never crop the wordmark; background is the
+     app's dark background color. -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/psx_background" />
+    <foreground android:drawable="@mipmap/psx_launcher_foreground" />
+</adaptive-icon>

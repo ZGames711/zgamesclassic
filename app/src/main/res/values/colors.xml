@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PSX palette v2: deep midnight base, electric blue accent, cyan highlight. -->
+    <color name="psx_background">#FF07090F</color>
+    <color name="psx_splash_background">#FF05070C</color>
+    <color name="psx_surface">#FF10141F</color>
+    <color name="psx_surface_light">#FF192033</color>
+    <color name="psx_blue">#FF3D7BFF</color>
+    <color name="psx_blue_dark">#FF2557D6</color>
+    <color name="psx_cyan">#FF6CC4FF</color>
+    <color name="psx_text_primary">#FFEAF0FF</color>
+    <color name="psx_text_secondary">#FF9AA6C4</color>
+    <color name="psx_transparent">#00000000</color>
+</resources>

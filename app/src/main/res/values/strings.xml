@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NOTE: no emulator names anywhere in user-visible strings, ever.
+         Platform labels are PSP / PS2 only. -->
+    <string name="app_name">ZGames PSX</string>
+</resources>

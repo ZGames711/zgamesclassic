@@ -1,0 +1,11 @@
+# ninja log v5
+0	3058	1794800806926408928	CMakeFiles/psxfrontend.dir/frontend.cpp.o	2585959a0021771
+3078	3153	1794800807031752237	/home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/build/intermediates/cxx/Debug/232x4w2o/obj/arm64-v8a/libpsxfrontend.so	b22fce9fe5a12f32
+799	4159	1794802007197246738	CMakeFiles/psxfrontend.dir/frontend.cpp.o	2585959a0021771
+4169	4635	1794802007694970228	/home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/build/intermediates/cxx/Debug/232x4w2o/obj/arm64-v8a/libpsxfrontend.so	b22fce9fe5a12f32
+841	4839	1794804355887001481	CMakeFiles/psxfrontend.dir/frontend.cpp.o	2585959a0021771
+4839	5334	1794804356404726500	/home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/build/intermediates/cxx/Debug/232x4w2o/obj/arm64-v8a/libpsxfrontend.so	b22fce9fe5a12f32
+1381	6050	1794804766531685569	CMakeFiles/psxfrontend.dir/frontend.cpp.o	2585959a0021771
+6055	6600	1794804767137723522	/home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/build/intermediates/cxx/Debug/232x4w2o/obj/arm64-v8a/libpsxfrontend.so	b22fce9fe5a12f32
+933	4536	1794806737340220850	CMakeFiles/psxfrontend.dir/frontend.cpp.o	2585959a0021771
+4541	5105	1794806737932273744	/home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/build/intermediates/cxx/Debug/232x4w2o/obj/arm64-v8a/libpsxfrontend.so	b22fce9fe5a12f32

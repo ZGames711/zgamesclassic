@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Needed only on API 26-28 to write into public Downloads; scoped storage covers 29+. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+
+    <!-- Lets the app see which PS1 emulator is installed (Android 11+ package visibility). -->
+    <queries>
+        <package android:name="com.retroarch.aarch64" />
+        <package android:name="com.retroarch" />
+        <package android:name="com.retroarch.ra32" />
+        <package android:name="com.github.stenzek.duckstation" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:mimeType="application/octet-stream" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".PsxApp"
+        tools:replace="android:name,android:theme,android:label,android:allowBackup"
+        android:label="ZGames PSX"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Psx"
+        android:extractNativeLibs="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="false"
+        android:enableOnBackInvokedCallback="true"
+        android:supportsRtl="true">
+
+        <!-- AdMob application ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${admobAppId}" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Psx.Splash"
+            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Built-in PS1 emulator: own process so a core crash never takes the app down. -->
+        <activity
+            android:name=".emulator.EmulatorActivity"
+            android:process=":emulator"
+            android:exported="false"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenSize|smallestScreenSize|screenLayout|uiMode|navigation"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/psx_file_paths"
+                tools:replace="android:resource" />
+        </provider>
+    </application>
+
+</manifest>

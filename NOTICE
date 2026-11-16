@@ -1,0 +1,15 @@
+ZGames PSPSX2 (evolutionofgames) - licensing notice
+
+This project as a whole is distributed under the GNU General Public License,
+version 3 (see LICENSE).
+
+Bundled / derived components and their upstream licenses:
+  - PPSSPP (org.ppsspp.*, hrydgard/ppsspp)  GPL v2 or later  -> combined work under GPL v3
+  - EmuCoreX (libs/emucorex.aar, based on PCSX2)  GPL v3
+  - ZGames app code (com.evolutionofgames.zgamespspsx2.*)  GPL v3
+  - Third-party libraries (AndroidX, OkHttp, Coil, Google Play Services / AdMob, Firebase,
+    Play Billing) keep their own licenses and terms.
+
+Source availability: if you distribute the APK, you must also offer the complete
+corresponding source code (including these modifications) under the same license.
+Keep the upstream copyright and license notices in every source file.

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/.cxx/Debug/232x4w2o/arm64-v8a",
+  "command": "/home/hatch/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --sysroot=/home/hatch/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpsxfrontend_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -fno-limit-debug-info  -fPIC -std=c++17 -o CMakeFiles/psxfrontend.dir/frontend.cpp.o -c /home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/src/main/cpp/frontend.cpp",
+  "file": "/home/hatch/workspace/zgames-psx-v5/ZGamesPSX/app/src/main/cpp/frontend.cpp"
+}
+]

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185466519738",
+    "project_id": "zgames-psx",
+    "storage_bucket": "zgames-psx.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185466519738:android:d60ccddb368486cdf04283",
+        "android_client_info": {
+          "package_name": "com.evolutionofgames.zgamespsx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtAJK3uJ9d-mJXNDz9JS92WOwQIqcgHuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

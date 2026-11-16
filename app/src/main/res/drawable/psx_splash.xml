@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launch splash: background sampled from the new logo's own edge
+     pixels (#03060D) so the artwork blends with no seam; the landscape
+     logo (1024x764) centered, full artwork, never cropped.
+     No extra text — the wordmark is in the logo itself.
+     Shown as MainActivity's windowBackground until the first frame. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/psx_splash_background" />
+    <item
+        android:drawable="@drawable/psx_splash_logo"
+        android:gravity="center"
+        android:width="240dp"
+        android:height="262dp" />
+</layer-list>
